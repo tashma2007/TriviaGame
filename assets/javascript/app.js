@@ -1,6 +1,6 @@
 //$(document).ready( = {
 
-var timer = 0;
+var timer = 30;
 var correctAnswer = 0;
 var incorrectAnswer = 0;
 var questionNumber = 0;
@@ -53,9 +53,9 @@ function decrease() {
 
 
 $("#startButton").on("click", function () {
-    console.log('hello');
+   // console.log('hello');
     $("#start").hide();
-    game(0);
+    game.startButton();
 })
 
 $(document).on("click", ".answerButton", function () {
